@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.airconditionsystem.mapper.AirConditionMapper">
+    <resultMap id="BaseResultMap" type="com.example.airconditionsystem.bean.AirCondition">
+        <id column="airid" property="airId"/>
+        <result column="airname" property="airName"/>
+        <result column="roomid" property="roomId"/>
+        <result column="airremarks" property="airRemarks"/>
+    </resultMap>
+
+    <select id="getAirConditionByAirId" resultMap="BaseResultMap">
+        select * from aircondition where airid = #{airId};
+    </select>
+
+    <insert id="createAirCondition">
+        insert into aircondition (airid, airname, roomid, airremarks)
+        values (#{airId}, #{airName}, #{roomId}, #{airRemarks});
+    </insert>
+
+    <delete id="deleteAirCondition">
+        delete from aircondition where airid = #{airId};
+    </delete>
+
+    <update id="updateAirCondition">
+        update aircondition set airname = #{airName}, roomid = #{roomId}, airremarks = #{airRemarks}
+        where airid = #{airId};
+    </update>
+
+</mapper>
