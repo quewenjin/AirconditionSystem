@@ -1211,19 +1211,19 @@
     <column id="306" parent="294" name="amtemperature">
       <Position>3</Position>
       <Comment>温度</Comment>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>double(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="307" parent="294" name="amwet">
       <Position>4</Position>
       <Comment>湿度</Comment>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>double(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="308" parent="294" name="amrsi">
       <Position>5</Position>
       <Comment>输出电平</Comment>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>double(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="309" parent="294" name="amtime">
@@ -1255,19 +1255,19 @@
     <column id="313" parent="295" name="rmtemperature">
       <Position>3</Position>
       <Comment>温度</Comment>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>double(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="314" parent="295" name="rmwet">
       <Position>4</Position>
       <Comment>湿度</Comment>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>double(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="315" parent="295" name="rmrsi">
       <Position>5</Position>
       <Comment>输出电平</Comment>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>double(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="316" parent="295" name="rmtime">

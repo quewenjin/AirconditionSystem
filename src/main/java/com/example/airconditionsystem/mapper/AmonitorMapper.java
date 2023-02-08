@@ -17,13 +17,13 @@ public interface AmonitorMapper {
      * 通过airId得到Amonitor
      * @return Amonitor
      */
-    Amonitor getAmonitorsByRoomId(String airId);
+    Amonitor getAmonitorByAirId(String airId);
 
     /**
      * 增加机房监控
      * @return 成功为1失败为0
      */
-    int createAmonitor(String airId, String amTemperature, String amWet, String amRsi, Timestamp amTime);
+    int createAmonitor(String airId, Double amTemperature, Double amWet, Double amRsi, Timestamp amTime);
 
     /**
      * 删除机房监控
@@ -35,11 +35,6 @@ public interface AmonitorMapper {
      * 修改机房监控信息,airId为key
      * @return 成功为1失败为0
      */
-    int updateAmonitor(String airId, String amTemperature, String amWet, String amRsi, Timestamp amTime);
+    int updateAmonitor(String airId, Double amTemperature, Double amWet, Double amRsi, Timestamp amTime);
 
-    /**
-     * 
-     * @return List<Amonitor>
-     */
-    List<Amonitor> getAllAmonitors();
 }

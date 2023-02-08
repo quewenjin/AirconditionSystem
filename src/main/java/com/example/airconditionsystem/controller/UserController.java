@@ -38,8 +38,6 @@ public class UserController {
         } else {
             json.put("status", "no");
         }
-
-
         return json.toString();
     }
 

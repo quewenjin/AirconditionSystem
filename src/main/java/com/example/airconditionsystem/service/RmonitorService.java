@@ -24,15 +24,15 @@ public class RmonitorService {
      * 通过roomId得到Rmonitor
      * @return Rmonitor
      */
-    public Rmonitor getRmonitorsByRoomId(String RoomId){
-        return rmonitorMapper.getRmonitorsByRoomId(RoomId);
+    public Rmonitor getRmonitorByRoomId(String RoomId){
+        return rmonitorMapper.getRmonitorByRoomId(RoomId);
     }
 
     /**
      * 增加机房监控
      * @return 成功为1失败为0
      */
-    public int createRmonitor(String rooomId, String rmTemperature, String rmWet, String rmRsi, Timestamp rmTime){
+    public int createRmonitor(String rooomId, double rmTemperature, double rmWet, double rmRsi, Timestamp rmTime){
         return rmonitorMapper.createRmonitor(rooomId, rmTemperature, rmWet, rmRsi, rmTime);
     }
 
@@ -48,7 +48,7 @@ public class RmonitorService {
      * 修改机房监控信息,roomId为key
      * @return 成功为1失败为0
      */
-    public int updateRmonitor(String rooomId, String rmTemperature, String rmWet, String rmRsi, Timestamp rmTime){
-        return rmonitorMapper.updateRmonitor(rooomId, rmTemperature, rmWet, rmRsi, rmTime);
+    public int updateRmonitor(String roomId, double rmTemperature, double rmWet, double rmRsi, Timestamp rmTime){
+        return rmonitorMapper.updateRmonitor(roomId, rmTemperature, rmWet, rmRsi, rmTime);
     }
 }

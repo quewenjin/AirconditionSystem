@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * @auther quewenjin
  * @time 2023/2/6 10:21
@@ -47,5 +49,13 @@ public class AirConditionService {
      */
     public int updateAirCondition(String airId, String airName, String roomId, String airRemarks){
         return airConditionMapper.updateAirCondition(airId, airName, roomId, airRemarks);
+    }
+
+    /**
+     * 通过roomId得到List<AirCondition>
+     * @return List<AirCondition>
+     */
+    public List<AirCondition> getAirConditionsByRoomId(String roomId){
+        return airConditionMapper.getAirConditionsByRoomId(roomId);
     }
 }

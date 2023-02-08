@@ -1,6 +1,7 @@
 package com.example.airconditionsystem.mapper;
 
 import com.example.airconditionsystem.bean.AirCondition;
+import com.example.airconditionsystem.bean.Room;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -36,4 +37,9 @@ public interface AirConditionMapper {
      */
     int updateAirCondition(String airId, String airName, String roomId, String airRemarks);
 
+    /**
+     * 通过roomId得到List<AirCondition>
+     * @return List<AirCondition>
+     */
+    List<AirCondition> getAirConditionsByRoomId(String roomId);
 }

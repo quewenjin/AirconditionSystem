@@ -9,9 +9,9 @@ import java.sql.Timestamp;
 public class Amonitor {
     private int amonitorId; // 空调监测表id
     private String airId;   // 空调id
-    private String amTemperature;   // 温度
-    private String amWet;   // 湿度
-    private String amRsi;   // 输出电平
+    private Double amTemperature;   // 温度
+    private Double amWet;   // 湿度
+    private Double amRsi;   // 输出电平
     private Timestamp amTime;   // 时间
 
     public int getAmonitorId() {
@@ -30,27 +30,27 @@ public class Amonitor {
         this.airId = airId;
     }
 
-    public String getAmTemperature() {
+    public Double getAmTemperature() {
         return amTemperature;
     }
 
-    public void setAmTemperature(String amTemperature) {
+    public void setAmTemperature(Double amTemperature) {
         this.amTemperature = amTemperature;
     }
 
-    public String getAmWet() {
+    public Double getAmWet() {
         return amWet;
     }
 
-    public void setAmWet(String amWet) {
+    public void setAmWet(Double amWet) {
         this.amWet = amWet;
     }
 
-    public String getAmRsi() {
+    public Double getAmRsi() {
         return amRsi;
     }
 
-    public void setAmRsi(String amRsi) {
+    public void setAmRsi(Double amRsi) {
         this.amRsi = amRsi;
     }
 

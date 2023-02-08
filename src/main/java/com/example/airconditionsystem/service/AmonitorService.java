@@ -23,15 +23,15 @@ public class AmonitorService {
      * 通过airId得到Amonitor
      * @return Amonitor
      */
-    public Amonitor getAmonitorsByRoomId(String airId){
-        return amonitorMapper.getAmonitorsByRoomId(airId);
+    public Amonitor getAmonitorByAirId(String airId){
+        return amonitorMapper.getAmonitorByAirId(airId);
     }
 
     /**
      * 增加机房监控
      * @return 成功为1失败为0
      */
-    public int createAmonitor(String airId, String amTemperature, String amWet, String amRsi, Timestamp amTime){
+    public int createAmonitor(String airId, Double amTemperature, Double amWet, Double amRsi, Timestamp amTime){
         return amonitorMapper.createAmonitor(airId, amTemperature, amWet, amRsi, amTime);
     }
 
@@ -47,7 +47,7 @@ public class AmonitorService {
      * 修改机房监控信息,airId为key
      * @return 成功为1失败为0
      */
-    public int updateAmonitor(String airId, String amTemperature, String amWet, String amRsi, Timestamp amTime){
+    public int updateAmonitor(String airId, Double amTemperature, Double amWet, Double amRsi, Timestamp amTime){
         return amonitorMapper.updateAmonitor(airId, amTemperature, amWet, amRsi, amTime);
     }
 }

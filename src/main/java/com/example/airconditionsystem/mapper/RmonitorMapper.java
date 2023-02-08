@@ -17,13 +17,13 @@ public interface RmonitorMapper {
      * 通过roomId得到Rmonitor
      * @return Rmonitor
      */
-    Rmonitor getRmonitorsByRoomId(String roomId);
+    Rmonitor getRmonitorByRoomId(String roomId);
 
     /**
      * 增加机房监控
      * @return 成功为1失败为0
      */
-    int createRmonitor(String rooomId, String rmTemperature, String rmWet, String rmRsi, Timestamp rmTime);
+    int createRmonitor(String rooomId, double rmTemperature, double rmWet, double rmRsi, Timestamp rmTime);
 
     /**
      * 删除机房监控
@@ -35,5 +35,5 @@ public interface RmonitorMapper {
      * 修改机房监控信息,roomId为key
      * @return 成功为1失败为0
      */
-    int updateRmonitor(String rooomId, String rmTemperature, String rmWet, String rmRsi, Timestamp rmTime);
+    int updateRmonitor(String roomId, double rmTemperature, double rmWet, double rmRsi, Timestamp rmTime);
 }
