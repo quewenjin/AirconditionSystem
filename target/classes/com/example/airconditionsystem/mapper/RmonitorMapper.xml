@@ -13,7 +13,7 @@
         <result column="rmtime" property="rmTime"/>
     </resultMap>
 
-    <select id="getRmonitorsByRoomId" resultMap="BaseResultMap">
+    <select id="getRmonitorByRoomId" resultMap="BaseResultMap">
         select * from rmonitor where roomid = #{roomId};
     </select>
 

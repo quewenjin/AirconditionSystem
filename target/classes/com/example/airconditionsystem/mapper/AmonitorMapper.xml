@@ -13,7 +13,7 @@
         <result column="amtime" property="amTime"/>
     </resultMap>
 
-    <select id="getAmonitorsByRoomId" resultMap="BaseResultMap">
+    <select id="getAmonitorByAirId" resultMap="BaseResultMap">
         select * from amonitor where airid = #{airId};
     </select>
 
@@ -30,5 +30,10 @@
         update amonitor set amtemperature = #{amTemperature}, amwet = #{amWet}, amrsi = #{amRsi}, amtime = #{amTime}
         where airid = #{airId};
     </update>
+
+    <select id="getAmonitorsBetweenTime" resultMap="BaseResultMap">
+        select * from amonitor where airid = #{airId}
+        and (amtime between #{frontTime} and #{backTime});
+    </select>
 
 </mapper>

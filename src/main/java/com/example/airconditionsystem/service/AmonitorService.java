@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 /**
  * @auther quewenjin
@@ -49,5 +50,14 @@ public class AmonitorService {
      */
     public int updateAmonitor(String airId, Double amTemperature, Double amWet, Double amRsi, Timestamp amTime){
         return amonitorMapper.updateAmonitor(airId, amTemperature, amWet, amRsi, amTime);
+    }
+
+    /**
+     * 未测试
+     * 一个时间段内某个airId对应空调所有数据
+     * @return List<Amonitor>
+     */
+    public List<Amonitor> getAmonitorsBetweenTime(String airId, Timestamp frontTime, Timestamp backTime){
+        return amonitorMapper.getAmonitorsBetweenTime(airId, frontTime, backTime);
     }
 }

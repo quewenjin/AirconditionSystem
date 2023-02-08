@@ -31,4 +31,9 @@
         where airid = #{airId};
     </update>
 
+    <select id="getAmonitorsBetweenTime" resultMap="BaseResultMap">
+        select * from amonitor where airid = #{airId}
+        and (amtime between #{frontTime} and #{backTime});
+    </select>
+
 </mapper>

@@ -29,4 +29,8 @@
         where airid = #{airId};
     </update>
 
+    <select id="getAirConditionsByRoomId" resultMap="BaseResultMap">
+        select * from aircondition where roomid = #{roomId};
+    </select>
+
 </mapper>

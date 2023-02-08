@@ -37,4 +37,9 @@ public interface AmonitorMapper {
      */
     int updateAmonitor(String airId, Double amTemperature, Double amWet, Double amRsi, Timestamp amTime);
 
+    /**
+     * 一个时间段内某个airId对应空调所有数据
+     * @return List<Amonitor>
+     */
+    List<Amonitor> getAmonitorsBetweenTime(String airId, Timestamp frontTime, Timestamp backTime);
 }
