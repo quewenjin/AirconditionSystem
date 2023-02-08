@@ -36,4 +36,8 @@
         and (amtime between #{frontTime} and #{backTime});
     </select>
 
+    <select id="getDistinctAmTime" resultType="java.sql.Timestamp">
+        select distinct amtime from amonitor
+    </select>
+
 </mapper>

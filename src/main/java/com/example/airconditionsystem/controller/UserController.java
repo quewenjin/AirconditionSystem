@@ -23,20 +23,20 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String userLogin(@RequestBody Map<String, Object> params) {
         String theName = params.get("userName").toString();
         String thePassword = params.get("userPassword").toString();
         JSONObject json = new JSONObject();
         User theUser = userService.getUserByUserName(theName);
-        if (theUser == null){
-            json.put("status", "null");
+        if (theUser == null || !thePassword.equals(theUser.getUserPassword())){
+            json.put("code", "403");
         } else if (thePassword.equals(theUser.getUserPassword())){
             String token = TokenUtil.generateToken(theUser);
             json.put("token", token);
-            json.put("status", "yes");
+            json.put("code", "200");
         } else {
-            json.put("status", "no");
+            json.put("code", "500");
         }
         return json.toString();
     }

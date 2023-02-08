@@ -42,4 +42,10 @@ public interface AmonitorMapper {
      * @return List<Amonitor>
      */
     List<Amonitor> getAmonitorsBetweenTime(String airId, Timestamp frontTime, Timestamp backTime);
+
+    /**
+     * 得到所有amtime（去重）
+     * @return List<Timestamp>
+     */
+    List<Timestamp> getDistinctAmTime();
 }

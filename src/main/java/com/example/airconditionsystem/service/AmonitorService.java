@@ -60,4 +60,12 @@ public class AmonitorService {
     public List<Amonitor> getAmonitorsBetweenTime(String airId, Timestamp frontTime, Timestamp backTime){
         return amonitorMapper.getAmonitorsBetweenTime(airId, frontTime, backTime);
     }
+
+    /**
+     * 得到所有amtime（去重）
+     * @return List<Timestamp>
+     */
+    public List<Timestamp> getDistinctAmTime(){
+        return amonitorMapper.getDistinctAmTime();
+    }
 }

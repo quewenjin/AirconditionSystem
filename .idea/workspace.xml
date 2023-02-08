@@ -3,20 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="48450664-85a6-4135-9be7-ffe579b3dda5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/controller/AutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/controller/AutoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/controller/MonitorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/controller/MonitorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/mapper/AmonitorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/mapper/AmonitorMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/mapper/AmonitorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/mapper/AmonitorMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/service/AmonitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/service/AmonitorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/bean/Amonitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/bean/Amonitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/bean/Rmonitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/bean/Rmonitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/controller/MonitorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/controller/MonitorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/mapper/AirConditionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/mapper/AirConditionMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/mapper/AirConditionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/mapper/AirConditionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/mapper/AmonitorMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/mapper/AmonitorMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/mapper/AmonitorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/mapper/AmonitorMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/mapper/RmonitorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/mapper/RmonitorMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/service/AirConditionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/service/AirConditionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/service/AmonitorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/service/AmonitorService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +35,17 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="airconditionsystem@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="airconditionsystem@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="airconditionsystem@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="airconditionsystem: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -150,7 +154,8 @@
       <updated>1675647258064</updated>
       <workItem from="1675647259565" duration="9331000" />
       <workItem from="1675665008703" duration="10520000" />
-      <workItem from="1675817383751" duration="9774000" />
+      <workItem from="1675817383751" duration="9800000" />
+      <workItem from="1675838357143" duration="6419000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1675822464044</created>
@@ -159,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675822464045</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1675828852457</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675828852457</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
