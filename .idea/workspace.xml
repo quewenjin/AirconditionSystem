@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="AirconditionSystem:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="48450664-85a6-4135-9be7-ffe579b3dda5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/AirconditionSystem_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/controller/AutoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/controller/AutoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/mapper/AmonitorMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/mapper/AmonitorMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/mapper/AmonitorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/mapper/AmonitorMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/service/AmonitorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/service/AmonitorService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +79,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -87,6 +90,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.10693877" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -155,6 +161,7 @@
       <workItem from="1675817383751" duration="9800000" />
       <workItem from="1675838357143" duration="7045000" />
       <workItem from="1675903549106" duration="803000" />
+      <workItem from="1675907225453" duration="2333000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1675822464044</created>
