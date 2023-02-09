@@ -1,0 +1,44 @@
+html,body,#app{
+    height: 100%;
+    min-height: 600px;
+    margin: 0;
+    padding: 0;
+}
+ 
+.con {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.headerviews {
+    background-color: rgba(95,146,140,1);
+    height: 40px !important;
+    margin: 0;
+    padding: 0;
+    font-family: '时尚中黑简体';
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* justify-items: end; */
+}
+.usercount {
+    font-family: '时尚中黑简体';
+    color: #434343;
+    font-weight: 900;
+    margin: 10px;
+    margin-right: 40px;
+    cursor: pointer;
+    justify-self: end;
+}
+.icomenu {
+    color: rgba(9,124,122,1);
+    margin-left: 10px;
+}
+.mainview {
+    background-color: rgba(239,240,242,1);
+    min-height: 560px;
+    /* height: 100%; */
+    /* padding: 0; */
+}
