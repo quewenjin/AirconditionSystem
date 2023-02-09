@@ -1,2 +1,2 @@
 # AirconditionSystem
- Project with Chen JC on Work
+ Project with JC Chen on Work
