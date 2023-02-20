@@ -13,7 +13,12 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registry.addInterceptor(loginInterceptor())
                 .addPathPatterns("/**")
                 // 那些路径不拦截
-                .excludePathPatterns("/user/login","/error");
+                .excludePathPatterns("/user/login","/error")
+//                 swagger2配置
+//                .excludePathPatterns("/swagger-resources","/error")
+//                .excludePathPatterns("/swagger-resources/configuration/ui","/error")
+//                .excludePathPatterns("/swagger-resources/configuration/security","/error")
+        ;
     }
 
     @Bean

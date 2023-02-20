@@ -37,7 +37,7 @@
     </select>
 
     <select id="getDistinctAmTime" resultType="java.sql.Timestamp">
-        select distinct amtime from amonitor
+        select distinct amtime from amonitor;
     </select>
 
 </mapper>

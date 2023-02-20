@@ -4,6 +4,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.example.airconditionsystem.bean.User;
 import com.example.airconditionsystem.service.UserService;
 import com.example.airconditionsystem.utils.TokenUtil;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

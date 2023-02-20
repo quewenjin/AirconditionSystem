@@ -4,6 +4,7 @@ package com.example.airconditionsystem.bean;
  * @auther quewenjin
  * @time 2023/2/6 9:53
  */
+
 public class User {
     private int userId; // 用户id
     private String userPassword;    // 密码

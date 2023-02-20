@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/mapper/AirConditionMapper.xml" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/mapper/AmonitorMapper.xml" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/mapper/RmonitorMapper.xml" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/mapper/RoomMapper.xml" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/mapper/UserMapper.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/mapper/AirConditionMapper.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/mapper/AmonitorMapper.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/mapper/RmonitorMapper.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/mapper/RoomMapper.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/mapper/UserMapper.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/utils/MybatisOrignal/AirConditionMapper.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/utils/MybatisOrignal/AmonitorMapper.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/utils/MybatisOrignal/RmonitorMapper.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/utils/MybatisOrignal/RoomMapper.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/utils/MybatisOrignal/UserMapper.xml" dialect="GenericSQL" />
   </component>
 </project>
