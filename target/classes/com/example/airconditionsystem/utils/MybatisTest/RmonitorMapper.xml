@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.airconditionsystem.mapper.RmonitorMapper">
+    <resultMap id="BaseResultMap" type="com.example.airconditionsystem.bean.Rmonitor">
+        <id column="rmonitorid" property="rmonitorId"/>
+        <result column="roomid" property="roomId"/>
+        <result column="rmtemperature" property="rmTemperature"/>
+        <result column="rmwet" property="rmWet"/>
+        <result column="rmrsi" property="rmRsi"/>
+        <result column="rmtime" property="rmTime"/>
+    </resultMap>
+
+    <select id="getRmonitorByRoomId" resultMap="BaseResultMap">
+        select * from rmonitor where roomid = #{roomId};
+    </select>
+
+    <insert id="createRmonitor">
+        insert into rmonitor (roomid, rmtemperature, rmwet, rmrsi, rmtime)
+        values (#{roomId}, #{rmTemperature}, #{rmWet}, #{rmRsi}, #{rmTime});
+    </insert>
+
+    <delete id="deleteRmonitor">
+        delete from rmonitor where roomid = #{rooomId};
+    </delete>
+
+    <update id="updateRmonitor">
+        update rmonitor set rmtemperature = #{rmTemperature}, rmwet = #{rmWet}, rmrsi = #{rmRsi}, rmtime = #{rmTime}
+        where roomid = #{roomId};
+    </update>
+
+</mapper>
