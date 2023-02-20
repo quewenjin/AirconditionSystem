@@ -1,5 +1,6 @@
 package com.example.airconditionsystem.mapper;
 
+import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.example.airconditionsystem.bean.AirCondition;
 import com.example.airconditionsystem.bean.Room;
 import org.apache.ibatis.annotations.*;
@@ -12,7 +13,7 @@ import java.util.List;
  */
 
 @Mapper
-public interface AirConditionMapper {
+public interface AirConditionMapper extends BaseMapper<AirCondition> {
     /**
      * 通过airId得到AirCondition
      * @return AirCondition

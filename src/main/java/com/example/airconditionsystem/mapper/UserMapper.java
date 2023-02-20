@@ -1,5 +1,6 @@
 package com.example.airconditionsystem.mapper;
 
+import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.example.airconditionsystem.bean.User;
 import org.apache.ibatis.annotations.*;
 
@@ -9,7 +10,7 @@ import org.apache.ibatis.annotations.*;
  */
 
 @Mapper
-public interface UserMapper {
+public interface UserMapper extends BaseMapper<User> {
     /**
      * 通过ID得到User
      * @return user
