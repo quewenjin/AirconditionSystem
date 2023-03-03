@@ -48,4 +48,11 @@ public interface AirConditionMapper extends BaseMapper<AirCondition> {
      */
     @Select("select * from aircondition where roomid = #{roomId}")
     List<AirCondition> getAirConditionsByRoomId(String roomId);
+
+    /**
+     * 得到所有List<AirCondition>
+     * @return List<AirCondition>
+     */
+    @Select("select * from aircondition")
+    List<AirCondition> getAllAirConditions();
 }

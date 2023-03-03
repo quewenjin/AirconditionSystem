@@ -2,9 +2,12 @@ package com.example.airconditionsystem.service;
 
 import com.example.airconditionsystem.bean.Room;
 import com.example.airconditionsystem.mapper.RoomMapper;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 /**
  * @auther quewenjin
@@ -47,5 +50,13 @@ public class RoomService {
      */
     public int updateRoom(String roomId, String roomName, String roomAddress, String roomRemarks){
         return roomMapper.updateRoom(roomId, roomName, roomAddress, roomRemarks);
+    }
+
+    /**
+     * 得到所有Room
+     * @return List<Room>
+     */
+    public List<Room> getAllRoom(){
+        return roomMapper.getAllRoom();
     }
 }

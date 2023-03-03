@@ -2,6 +2,7 @@ package com.example.airconditionsystem.service;
 
 import com.example.airconditionsystem.bean.AirCondition;
 import com.example.airconditionsystem.mapper.AirConditionMapper;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -57,5 +58,13 @@ public class AirConditionService {
      */
     public List<AirCondition> getAirConditionsByRoomId(String roomId){
         return airConditionMapper.getAirConditionsByRoomId(roomId);
+    }
+
+    /**
+     * 得到所有List<AirCondition>
+     * @return List<AirCondition>
+     */
+    public List<AirCondition> getAllAirConditions(){
+        return airConditionMapper.getAllAirConditions();
     }
 }

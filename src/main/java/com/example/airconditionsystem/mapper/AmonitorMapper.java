@@ -15,11 +15,11 @@ import java.util.List;
 @Mapper
 public interface AmonitorMapper extends BaseMapper<Amonitor> {
     /**
-     * 通过airId得到Amonitor
-     * @return Amonitor
+     * 通过airId得到List<Amonitor>
+     * @return List<Amonitor>
      */
     @Select("select * from amonitor where airid = #{airId}")
-    Amonitor getAmonitorByAirId(String airId);
+    List<Amonitor> getAmonitorsByAirId(String airId);
 
     /**
      * 增加机房监控
@@ -55,4 +55,11 @@ public interface AmonitorMapper extends BaseMapper<Amonitor> {
      */
     @Select("select distinct amtime from amonitor")
     List<Timestamp> getDistinctAmTime();
+
+    /**
+     * 通过airId和Timestamp得到Amonitor
+     * @return Amonitor
+     */
+    @Select("select * from amonitor where airid = #{airId} and amtime = #{amTime}")
+    Amonitor getAmonitorByAirIdAndAmTime(String airId, Timestamp amTime);
 }

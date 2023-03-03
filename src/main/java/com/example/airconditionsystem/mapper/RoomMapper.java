@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.example.airconditionsystem.bean.Room;
 import org.apache.ibatis.annotations.*;
 
+import java.util.List;
+
 /**
  * @auther quewenjin
  * @time 2023/2/6 10:14
@@ -38,4 +40,11 @@ public interface RoomMapper extends BaseMapper<Room> {
      */
     @Update("update room set roomname = #{roomName}, roomaddress = #{roomAddress}, roomremarks = {roomRemarks} where roomid = #{roomId}")
     int updateRoom(String roomId, String roomName, String roomAddress, String roomRemarks);
+
+    /**
+     * 得到所有Room
+     * @return List<Room>
+     */
+    @Select("select * from room")
+    List<Room> getAllRoom();
 }

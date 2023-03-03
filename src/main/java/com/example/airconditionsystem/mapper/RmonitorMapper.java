@@ -26,14 +26,14 @@ public interface RmonitorMapper extends BaseMapper<Rmonitor> {
      * @return 成功为1失败为0
      */
     @Insert("insert into rmonitor (roomid, rmtemperature, rmwet, rmrsi, rmtime) values (#{roomId}, #{rmTemperature}, #{rmWet}, #{rmRsi}, #{rmTime})")
-    int createRmonitor(String rooomId, double rmTemperature, double rmWet, double rmRsi, Timestamp rmTime);
+    int createRmonitor(String roomId, double rmTemperature, double rmWet, double rmRsi, Timestamp rmTime);
 
     /**
      * 删除机房监控
      * @return 成功为0失败为-1
      */
-    @Delete("delete from rmonitor where roomid = #{rooomId}")
-    int deleteRmonitor(String rooomId);
+    @Delete("delete from rmonitor where roomid = #{roomId}")
+    int deleteRmonitor(String roomId);
 
     /**
      * 修改机房监控信息,roomId为key

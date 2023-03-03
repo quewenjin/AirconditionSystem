@@ -32,16 +32,16 @@ public class RmonitorService {
      * 增加机房监控
      * @return 成功为1失败为0
      */
-    public int createRmonitor(String rooomId, double rmTemperature, double rmWet, double rmRsi, Timestamp rmTime){
-        return rmonitorMapper.createRmonitor(rooomId, rmTemperature, rmWet, rmRsi, rmTime);
+    public int createRmonitor(String roomId, double rmTemperature, double rmWet, double rmRsi, Timestamp rmTime){
+        return rmonitorMapper.createRmonitor(roomId, rmTemperature, rmWet, rmRsi, rmTime);
     }
 
     /**
      * 删除机房监控
      * @return 成功为0失败为-1
      */
-    public int deleteRmonitor(String rooomId){
-        return rmonitorMapper.deleteRmonitor(rooomId);
+    public int deleteRmonitor(String roomId){
+        return rmonitorMapper.deleteRmonitor(roomId);
     }
 
     /**

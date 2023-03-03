@@ -21,11 +21,11 @@ public class AmonitorService {
     AmonitorMapper amonitorMapper;
 
     /**
-     * 通过airId得到Amonitor
-     * @return Amonitor
+     * 通过airId得到List<Amonitor>
+     * @return List<Amonitor>
      */
-    public Amonitor getAmonitorByAirId(String airId){
-        return amonitorMapper.getAmonitorByAirId(airId);
+    public List<Amonitor> getAmonitorsByAirId(String airId){
+        return amonitorMapper.getAmonitorsByAirId(airId);
     }
 
     /**
@@ -67,5 +67,13 @@ public class AmonitorService {
      */
     public List<Timestamp> getDistinctAmTime(){
         return amonitorMapper.getDistinctAmTime();
+    }
+
+    /**
+     * 通过airId和Timestamp得到Amonitor
+     * @return Amonitor
+     */
+    public Amonitor getAmonitorByAirIdAndAmTime(String airId, Timestamp amTime){
+        return amonitorMapper.getAmonitorByAirIdAndAmTime(airId, amTime);
     }
 }
