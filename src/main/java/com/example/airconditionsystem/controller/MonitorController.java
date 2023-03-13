@@ -55,39 +55,45 @@ public class MonitorController {
         JSONArray jsonArray = new JSONArray();  // data层5个key：4个object1个array
         List<AirCondition> theAirConditions = airConditionService.getAirConditionsByRoomId(theRoomId);
         int dataCnt = theAirConditions.size();
-        for (AirCondition theAirCondition : theAirConditions) {
-            String theAirId = theAirCondition.getAirId();
-            JSONObject jsonObject = new JSONObject();
-            JSONArray theJsonArray = new JSONArray();   // details层每个object：4个object
-            List<Amonitor> amonitors = amonitorService.getAmonitorsBetweenTime(theAirId, frontTime, backTime);
-            int num = amonitors.size();
-            double cntOfTemperatures = 0;
-            double cntOfWets = 0;
-            double cntOfRsis = 0;
-            for (Amonitor amonitor: amonitors) {
-                JSONObject theJsonObject = new JSONObject();
-                theJsonObject.put("amTemperature", amonitor.getAmTemperature());
-                theJsonObject.put("amWet", amonitor.getAmWet());
-                theJsonObject.put("amRsi", amonitor.getAmRsi());
-                theJsonObject.put("amTime", amonitor.getAmTime());
-                cntOfTemperatures = cntOfTemperatures + amonitor.getAmTemperature();
-                cntOfWets = cntOfWets + amonitor.getAmWet();
-                cntOfRsis = cntOfRsis + amonitor.getAmRsi();
-                theJsonArray.add(theJsonObject);
+        if (dataCnt != 0){
+            for (AirCondition theAirCondition : theAirConditions) {
+                String theAirId = theAirCondition.getAirId();
+                JSONObject jsonObject = new JSONObject();
+                JSONArray theJsonArray = new JSONArray();   // details层每个object：4个object
+                List<Amonitor> amonitors = amonitorService.getAmonitorsBetweenTime(theAirId, frontTime, backTime);
+                int num = amonitors.size();
+                double cntOfTemperatures = 0;
+                double cntOfWets = 0;
+                double cntOfRsis = 0;
+                for (Amonitor amonitor: amonitors) {
+                    JSONObject theJsonObject = new JSONObject();
+                    theJsonObject.put("amTemperature", amonitor.getAmTemperature());
+                    theJsonObject.put("amWet", amonitor.getAmWet());
+                    theJsonObject.put("amRsi", amonitor.getAmRsi());
+                    theJsonObject.put("amTime", amonitor.getAmTime());
+                    cntOfTemperatures = cntOfTemperatures + amonitor.getAmTemperature();
+                    cntOfWets = cntOfWets + amonitor.getAmWet();
+                    cntOfRsis = cntOfRsis + amonitor.getAmRsi();
+                    theJsonArray.add(theJsonObject);
+                }
+                double theRmTemperature = cntOfTemperatures/num;
+                double theRmWet = cntOfWets/num;
+                double theRmRsi = cntOfRsis/num;
+                jsonObject.put("airId", theAirId);
+                jsonObject.put("details", theJsonArray);
+                jsonObject.put("recordCnt", num);
+                jsonObject.put("averageTemperature", theRmTemperature);
+                jsonObject.put("averageWet", theRmWet);
+                jsonObject.put("averageRsi", theRmRsi);
+                jsonArray.add(jsonObject);
             }
-            double theRmTemperature = cntOfTemperatures/num;
-            double theRmWet = cntOfWets/num;
-            double theRmRsi = cntOfRsis/num;
-            jsonObject.put("airId", theAirId);
-            jsonObject.put("details", theJsonArray);
-            jsonObject.put("recordCnt", num);
-            jsonObject.put("averageTemperature", theRmTemperature);
-            jsonObject.put("averageWet", theRmWet);
-            jsonObject.put("averageRsi", theRmRsi);
-            jsonArray.add(jsonObject);
+            json.put("data", jsonArray);
+            json.put("airCnt", dataCnt);
+            json.put("code", 200);
+        } else {
+            json.put("code", 500);
         }
-        json.put("data", jsonArray);
-        json.put("airCnt", dataCnt);
+
         return json.toString();
 //        {"code":"200","data":[{"averageTemperature":19.5,"averageWet":22.5,"averageRsi":200.0,"details":[{"amWet":23.0,"amTime":1675818000000,"amRsi":200.0,"amTemperature":20.0},{"amWet":22.0,"amTime":1675821600000,"amRsi":200.0,"amTemperature":19.0}],"airId":"10001","recordCnt":2},{"averageTemperature":21.5,"averageWet":31.5,"averageRsi":220.0,"details":[{"amWet":32.0,"amTime":1675818000000,"amRsi":220.0,"amTemperature":22.0},{"amWet":31.0,"amTime":1675821600000,"amRsi":220.0,"amTemperature":21.0}],"airId":"10002","recordCnt":2},{"averageTemperature":29.5,"averageWet":19.5,"averageRsi":240.0,"details":[{"amWet":20.0,"amTime":1675818000000,"amRsi":240.0,"amTemperature":30.0},{"amWet":19.0,"amTime":1675821600000,"amRsi":240.0,"amTemperature":29.0}],"airId":"10003","recordCnt":2}],"airCnt":3}
     }
@@ -109,26 +115,31 @@ public class MonitorController {
         double cntOfTemperatures = 0;
         double cntOfWets = 0;
         double cntOfRsis = 0;
-        for (Amonitor amonitor : amonitors) {
-            JSONObject theJsonObject = new JSONObject();
-            theJsonObject.put("amTemperature", amonitor.getAmTemperature());
-            theJsonObject.put("amWet", amonitor.getAmWet());
-            theJsonObject.put("amRsi", amonitor.getAmRsi());
-            theJsonObject.put("amTime", amonitor.getAmTime());
-            cntOfTemperatures = cntOfTemperatures + amonitor.getAmTemperature();
-            cntOfWets = cntOfWets + amonitor.getAmWet();
-            cntOfRsis = cntOfRsis + amonitor.getAmRsi();
-            theJsonArray.add(theJsonObject);
+        if (num != 0){
+            for (Amonitor amonitor : amonitors) {
+                JSONObject theJsonObject = new JSONObject();
+                theJsonObject.put("amTemperature", amonitor.getAmTemperature());
+                theJsonObject.put("amWet", amonitor.getAmWet());
+                theJsonObject.put("amRsi", amonitor.getAmRsi());
+                theJsonObject.put("amTime", amonitor.getAmTime());
+                cntOfTemperatures = cntOfTemperatures + amonitor.getAmTemperature();
+                cntOfWets = cntOfWets + amonitor.getAmWet();
+                cntOfRsis = cntOfRsis + amonitor.getAmRsi();
+                theJsonArray.add(theJsonObject);
+            }
+            double theRmTemperature = cntOfTemperatures / num;
+            double theRmWet = cntOfWets / num;
+            double theRmRsi = cntOfRsis / num;
+            json.put("airId", theAirId);
+            json.put("details", theJsonArray);
+            json.put("recordCnt", num);
+            json.put("averageTemperature", theRmTemperature);
+            json.put("averageWet", theRmWet);
+            json.put("averageRsi", theRmRsi);
+            json.put("code", 200);
+        } else {
+            json.put("code", 500);
         }
-        double theRmTemperature = cntOfTemperatures / num;
-        double theRmWet = cntOfWets / num;
-        double theRmRsi = cntOfRsis / num;
-        json.put("airId", theAirId);
-        json.put("details", theJsonArray);
-        json.put("recordCnt", num);
-        json.put("averageTemperature", theRmTemperature);
-        json.put("averageWet", theRmWet);
-        json.put("averageRsi", theRmRsi);
         return json.toString();
 //        {"code":"200","averageTemperature":19.5,"averageWet":22.5,"averageRsi":200.0,"details":[{"amWet":23.0,"amTime":1675818000000,"amRsi":200.0,"amTemperature":20.0},{"amWet":22.0,"amTime":1675821600000,"amRsi":200.0,"amTemperature":19.0}],"airId":"10001","recordCnt":2}
     }
