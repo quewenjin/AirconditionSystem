@@ -46,7 +46,7 @@ public class MonitorController {
      * @param params roomId, frontTime, backTime
      * @return json
      */
-    @RequestMapping(value = "/getDataBetweenTimeForRoom", method = RequestMethod.GET)
+    @RequestMapping(value = "/getDataBetweenTimeForRoom", method = RequestMethod.POST)
     public String getDataBetweenTimeForRoom(@RequestBody Map<String, Object> params) {
         String theRoomId = params.get("roomId").toString();
         Timestamp frontTime = new Timestamp(Long.parseLong(params.get("frontTime").toString()));
@@ -103,7 +103,7 @@ public class MonitorController {
      * @param params airId, frontTime, backTime
      * @return json
      */
-    @RequestMapping(value = "/getDataBetweenTimeForAir", method = RequestMethod.GET)
+    @RequestMapping(value = "/getDataBetweenTimeForAir", method = RequestMethod.POST)
     public String getDataBetweenTimeForAir(@RequestBody Map<String, Object> params) {
         String theAirId = params.get("airId").toString();
         Timestamp frontTime = new Timestamp(Long.parseLong(params.get("frontTime").toString()));
