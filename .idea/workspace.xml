@@ -5,15 +5,23 @@
       <artifact name="AirconditionSystem:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="48450664-85a6-4135-9be7-ffe579b3dda5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d6e689ef-7252-433a-9366-3aed599d9580.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d6e689ef-7252-433a-9366-3aed599d9580.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/controller/MonitorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem/controller/MonitorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/AirconditionSystem-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/AirconditionSystem-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/AirconditionSystem-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/AirconditionSystem-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/controller/MonitorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/airconditionsystem/controller/MonitorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/AirconditionSystem.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,40 +71,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="2LLPC5qZ04wL76LewSJwt7NmWAV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="TF_FMT" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/example/airconditionsystem" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.10693877" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/JavaProject/AirconditionSystem&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fe858af44ff5916affd69e758a6b99a2&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\JavaProject\AirconditionSystem\src\main\java\com\example\airconditionsystem\utils\MybatisOrignal" />
@@ -105,18 +104,6 @@
       <recent name="C:\JavaProject\AirconditionSystem\src\main\java\com\example\airconditionsystem" />
       <recent name="C:\JavaProject\AirconditionSystem\src\main\resources" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.AirconditionSystemApplication">
     <configuration name="TestUtil" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -134,13 +121,13 @@
     </configuration>
     <configuration name="AirconditionSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="AirconditionSystem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.airconditionsystem.AirconditionSystemApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.airconditionsystem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.airconditionsystem.AirconditionSystemApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,6 +138,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -177,6 +165,29 @@
       <workItem from="1677837294391" duration="394000" />
       <workItem from="1679902229867" duration="686000" />
       <workItem from="1680075753166" duration="1840000" />
+      <workItem from="1680233874240" duration="101000" />
+      <workItem from="1680234451091" duration="228000" />
+      <workItem from="1680601409598" duration="9000" />
+      <workItem from="1681181389523" duration="593000" />
+      <workItem from="1682213775484" duration="10000" />
+      <workItem from="1682480248390" duration="606000" />
+      <workItem from="1683083252075" duration="615000" />
+      <workItem from="1688950567586" duration="2618000" />
+      <workItem from="1688957313781" duration="267000" />
+      <workItem from="1688960942692" duration="695000" />
+      <workItem from="1688971926033" duration="1978000" />
+      <workItem from="1688977502796" duration="1075000" />
+      <workItem from="1688979015218" duration="84000" />
+      <workItem from="1688979153070" duration="13000" />
+      <workItem from="1688979253385" duration="623000" />
+      <workItem from="1693362483049" duration="196000" />
+      <workItem from="1693387178494" duration="126000" />
+      <workItem from="1693406190250" duration="121000" />
+      <workItem from="1693406606858" duration="464000" />
+      <workItem from="1693442082908" duration="224000" />
+      <workItem from="1693448134780" duration="102000" />
+      <workItem from="1693449174193" duration="222000" />
+      <workItem from="1693450165045" duration="141000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1675822464044</created>
@@ -224,16 +235,14 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
