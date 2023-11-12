@@ -1,5 +1,6 @@
 package com.example.airconditionsystem.bean;
 
+import cn.afterturn.easypoi.excel.annotation.Excel;
 import com.baomidou.mybatisplus.annotations.TableName;
 import lombok.Data;
 
